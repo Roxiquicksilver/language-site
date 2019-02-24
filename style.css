@@ -1,64 +1,322 @@
-/*MY CODE*/
-body{
-  background-color: #B762E8
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
 }
-h1 {
-  display: block;
-  height: 100px;
-  text-decoration: none;
-  color: blue;
-  font-size: 50px;
-  font-family: sans-serif;
-  margin: opx;
-  background-color: rgb(0,0,0);
-  text-align: center center;
-  padding: 0 20px;
+
+body {
+    line-height:1;
 }
-h2{
-  text-decoration: none;
-  color: blue;
-  margin: 5px;
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
 }
-p{
-  margin: 5px;
+
+nav ul {
+    list-style:none;
 }
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+/*MY CODE - starts with style for the mobile version of the website*/
 *{
   text-decoration: none;
   margin: 0;
   padding: 0;
 }
-nav {
+main {
+  padding-top: 120px;
+}
+body {
+  background-color: #B762E8
+}
+header {
+  position: fixed;
+  top:0;
+  right:0;
+  left: 0;
   width: 100%;
-  height: 100px;
-  background-color: #eee;
+  height: 120px;
 }
-.wrapper {
+header .header-brand {
+  text-decoration: none;
+  font-family: fantasy;
+  font-size: 24px;
+  font-weight: 900;
+  color: #123456;
+  display: block;
   margin: 0 auto;
-  width: 1000px;
-}
-.pic-of-me {
-  width: 300px;
+  text-align: center;
+  padding: 20px 0;
+  background-color: #B762E8;
 }
 /*Style to move around the entire navigation inside the website*/
-ul{
-  margin-left: 350px;
+header nav ul {
+  display: block;
+  margin: 0 auto;
+  width: fit-content;
 }
 /*Style to move around the individual links inside the unordered list*/
-ul li {
-  list-style: none;
+header nav ul li {
   display: inline-block; /*To make the list go horizontally*/
   float: left;
-  line-height: 100px; /*This is the same height as the navigation tab.*/
+  list-style: none;
+  padding: 0 2px;
+  padding-top: 5px;
+  height: 20px; /*This is the same height as the navigation tab.*/
 }
 /*To style the actual text inside the link*/
-ul li a{
-  display: block;
+header nav ul li a {
   text-decoration: none;
-  font-size: 14px;
   font-family: arial;
-  color: #1e1e1e;
-  padding: 0 20px;
+  font-size: 16px;
+  color: #111;
 }
-ul li a:hover {
+header nav ul li a:hover {
   color: red;
+}
+header h1 {
+  display: block;
+  height: 20px;
+  text-decoration: none;
+  color: blue;
+  font-size: 13px;
+  font-family: sans-serif;
+  margin: 0;
+  background-color: rgb(0,0,0);
+  text-align: center;
+  padding-top: 5px;
+}
+
+nav {
+  width: 100%;
+  height: 25px;
+  padding: 0 auto;
+  background-color: #eee;
+}
+/*responsive design*/
+.wrapper {
+  width: 100%;
+}
+.img-info {
+  width: 100%
+}
+.img-info h2 {
+  padding: 30px 30px 20px;
+  font-family: arial;
+  font-size: 40px;
+  color: #111;
+  line-height: 44px;
+}
+.img-info p {
+  padding: 0px 30px 20px;
+  font-family: arial;
+  font-size: 16px;
+  color: #111;
+  line-height: 24px;
+  text-align: justify;
+}
+.img-me {
+  width: 100%;
+}
+/*FOOTER*/
+footer {
+  width: calc(100% - 80px);
+  height: 130px;
+  padding: 40px 40px;
+  background: #111
+}
+footer ul {
+  width: fit-content;
+  padding-left: 20px;
+}
+footer ul li {
+  display: block;
+  list-style: none;
+}
+footer ul li a{
+  text-decoration: none;
+  font-family: arial;
+  font-size: 18px;
+  color: #fff;
+  line-height: 30px;
+}
+.eternal-links {
+  display: none;
+}
+/*responsive design (for ipad)*/
+@media only screen and (min-width: 768px) {
+  .banner {
+    display: block;
+  }
+  .wrapper {
+    width: 600px;
+    margin: 0 auto;
+  }
+  .wrapper p {
+    padding-top: 60px;
+  }
+  .img-info h2 {
+    padding: 50px 0px 0px;
+  }
+  .img-info p {
+    padding: 20px 0px 00px;
+    font-size: 25px;
+  }
+  .img-me {
+    padding-top: 30px;
+  }
+  header nav ul li {
+    padding: 0 18px;
+  }
+  header nav ul li a{
+    font-size: 26px;
+  }
+  header nav {
+    height: 40px;
+    padding-top: 10px;
+  }
+  header h1 {
+    height: 40px;
+    font-size: 26px;
+    padding-top: 10px;
+  }
+  p {
+    font-size: 30px;
+  }
+}
+/*responsive design (for pc)*/
+@media only screen and (min-width: 1000px) {
+  .wrapper {
+    width: 1000px;
+  }
+  .img-info {
+    width: 50%;
+    float: right;
+  }
+  .img-info h2 {
+    padding: 20px 0px 0px 30px;
+  }
+  .img-info p {
+    padding: 20px 0px 0px 30px;
+  }
+  .img-me {
+    width: 50%;
+    float: left;
+  }
+  main {
+    height: 550px;
+  }
+  header .header-brand {
+    margin: 0;
+    text-align: left;
+    line-height: 50px;
+    padding: 0 40px 0 40px;
+    border-right: 3px solid #111;
+    float: left;
+    background-color: #eee;
+  }
+  /*FOOTER*/
+  footer {
+    width: calc(100% - 80px);
+    height: 130px;
+    padding: 40px 40px;
+    margin-top: 20px;
+    background: #111;
+
+    display: flex;
+  }
+
+  .links {
+    text-decoration: none;
+    font-family: arial;
+    font-size: 18px;
+    color: #fff;
+    line-height: 30px;
+  }
+  .eternal-links {
+    display: block;
+  }
 }
