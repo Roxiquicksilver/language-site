@@ -3,7 +3,7 @@
 <head>
   <title>Roxiquicksilver</title>
   <!--This is a favicon-->
-  <link rel="shortcut icon" type="image/JPG" href="img/thumbnail.JPG">
+  <link rel="shortcut icon" type="image/png" href="img/favicon.png">
   <meta charset="UTF-8">
   <link rel="stylesheet" href="style.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -29,9 +29,22 @@
         <p>If you would like to find out which are the best and maybe the worst learning resources for learning Japanese and Mandarin then you have come to the right place. </p>
         <p>Also if you are a Japanese or Chinese speaker looking to find English learning resources, then look no further.</p>
         <p>This site is a work in progress, so quite often the information on a certain resource will be incomplete. I aim to add to the site each week and hope that in the future this site can be used as a useful tool for language learners. Please post a comment if you see any spelling mistakes or would like to make a suggestion.</p>
+        <br/>
         <!-- Add a comment box -->
       </article>
-      <img class="img-me" src="img/me.jpg" alt="Roxanne Hatton in Beijing">
+      <div class="carousel-wrapper">
+        <div class="carousel">
+          <img class="carousel__photo initial" src="img/me.jpg">
+          <img class="carousel__photo" src="img/ymy0.jpg">
+          <img class="carousel__photo" src="img/waterlilies.jpg">
+          <img class="carousel__photo" src="img/waterlilies2.jpg">
+          <img class="carousel__photo" src="img/ymy1.jpg">
+          <img class="carousel__photo" src="img/yuanmingyuan.jpg">
+
+          <div class="carousel__button--next"></div>
+          <div class="carousel__button--prev"></div>
+        </div>
+      </div>
     </div>
   </main>
     <div class="wrapper">
@@ -52,5 +65,6 @@
           </ul>
       </footer>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>
